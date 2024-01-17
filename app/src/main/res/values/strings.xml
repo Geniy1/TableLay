@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TableL</string>
+    <string name="button">Button</string>
+    <string name="yodda_saqlash">Yodda saqlash</string>
+    <string name="parol">Parol</string>
+    <string name="login">Login</string>
+    <string name="hello">HELLO</string>
+    <string name="_12345678">12345678</string>
+    <string name="golibjonodinaev_gmail_com">golibjonodinaev@gmail.com</string>
+    <string name="your_login_and_password_is_free">Your login and password is free</string>
+    <string name="there_are_viewed_your_account_details">There are viewed your account details!</string>
+</resources>

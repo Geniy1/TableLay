@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30EECB"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:contentDescription="@string/hello"
+        android:src="@drawable/acc_in"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TableLayout
+
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:flow_verticalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgV">
+
+        <!--        <TableRow-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+
+
+        <!--        </TableRow>-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:id="@+id/log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:text="@string/login" />
+
+            <EditText
+                android:id="@+id/lg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="golibjonodinaev@gmail.com"
+                android:ems="10"
+                android:hint="@string/golibjonodinaev_gmail_com"
+                android:inputType="textEmailAddress"
+                tools:ignore="LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:text="@string/parol" />
+
+            <EditText
+                android:id="@+id/pswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="12345678"
+                android:ems="10"
+                android:hint="@string/_12345678"
+                android:inputType="textPassword"
+                tools:ignore="LabelFor" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remember" />
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="@string/yodda_saqlash"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
